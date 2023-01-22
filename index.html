@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+           <div class="dash-search">
+                <h3>Dashboard</h3>
+                <div class="input-content">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search">
+                </div>
+           </div>
+            <div class="left-icons">
+                <ion-icon name="notifications-outline"></ion-icon>
+                <ion-icon name="settings-outline"></ion-icon>
+                <div class="round-img">
+                    <img src="https://images.unsplash.com/photo-1577565177023-d0f29c354b69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGVhZCUyMHNob3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                <ion-icon name="chevron-down-circle-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <aside>
+            <div class="top-lists">
+                <ul>
+                    <li> <ion-icon name="grid-outline"></ion-icon>Dashboard</li>
+                    <li><ion-icon name="desktop-outline"></ion-icon>Devices</li>
+                    <li><ion-icon name="bulb-outline"></ion-icon>Lights</li>
+                    <li><ion-icon name="thermometer-outline"></ion-icon>Temperature</li>
+                    <li><ion-icon name="water-outline"></ion-icon>Water</li>
+                    <li><ion-icon name="wifi-outline"></ion-icon>Wifi</li>
+                    <li><ion-icon name="alarm-outline"></ion-icon>Security</li>
+                    <li><ion-icon name="flash-outline"></ion-icon>Electricity</li>
+                </ul>
+
+                <ul>
+                    <li><ion-icon name="exit-outline"></ion-icon>Logout</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <main>
+            <div class="first-text">
+                <p>Good Morning, Sammy</p>
+                <p>28 C</p>
+            </div>
+
+            <div class="second-column">
+                <div>
+                    <p class="date"></p>
+                    <h1 class="time"></h1>
+                </div>
+                <div style="display: flex; align-items:center;">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p>Santiago</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="light">
+
+        </div>
+
+        <div class="security-alert">
+
+        </div>
+
+        <div class="thermostat">
+
+        </div>
+
+        <div class="daily-activities">
+
+        </div>
+
+        <div class="trending">
+            
+        </div>
+    </section>
+
+<!-- icons link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        // let month = months[d.getMonth()];
+        const pTag = document.querySelector('.date')
+        const d = new Date()
+        pTag.innerHTML = `${d.getDay()}  ${months[d.getMonth()]},  ${d.getFullYear()}`
+
+
+        const time = document.querySelector('.time')
+
+        time.innerHTML = `${d.getHours()}:${d.getMinutes()}`
+    </script>
+</body>
+</html>

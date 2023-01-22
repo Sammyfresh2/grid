@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #202121;
+    height: 100vh;
+
+}
+
+header{
+    background-color: #525453;
+    
+    
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    
+}
+
+.dash-search{
+    display: flex;
+    align-items: center;
+}
+
+.dash-search h3{
+    color: #2ed955;
+}
+
+.input-content{
+    background-color: #3c3d3c;
+    margin-left: 25px;
+    padding: 7px 100px 5px 10px;
+    border-radius: 12px;
+    color: white;
+
+    /* flex-basis: 5rem; */
+}
+
+.input-content input{
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    color: white;
+    margin-left: 5px;
+}
+
+.head .left-icons{
+    display: flex;
+    align-items: center;
+}
+
+ion-icon {
+    color: white;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.round-img img{
+    height: 40px;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* section starts */
+
+section{
+    height: 92.3vh;
+    display: grid;
+    grid-template-columns: 150px auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+/* aside styling */
+aside{
+    padding-top: 15px;
+    background-color: #525453;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+aside .top-lists{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-lists ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.top-lists ul li:active{
+    background-color: #202121;
+    color: #2ed955;
+}
+
+li ion-icon{
+    margin-right: -5px;
+    color: #b9bdb9;
+    height: 20px;
+}
+
+/* main styling */
+
+
+main{
+    position: relative;
+    background: url('https://media.istockphoto.com/id/1332712244/photo/sunrise-over-misty-fields-of-corn.jpg?b=1&s=170667a&w=0&k=20&c=41COGOAbg_YcSCfM8RetRv941pKYuL7lmsJroIvCqnc=');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    border-radius: 20px;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    margin-top: 15px;
+}
+main::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+
+}
+
+.first-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+.second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+/* light section */
+
+.light{
+    background-color: #525453;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border-radius: 20px;
+}
+
+.security-alert{
+    background-color: #525453;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border-radius: 20px;
+}
+
+.thermostat{
+    background-color: #525453;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.daily-activities{
+    background-color: #525453;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* trending section */
+
+.trending{
+    background-color: #525453;
+    grid-column: 4/5;
+    grid-row: 1/5;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
